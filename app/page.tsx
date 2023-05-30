@@ -1,5 +1,6 @@
  
 
+import Product from "@/components/Product";
 import Head from "next/head";
 
 export default async function Home() {
@@ -18,9 +19,7 @@ export default async function Home() {
           <h1 className="text-5xl font-bold text-center">DEALS OF THE DAY</h1>
           {
             products.map((product)=>(
-              <div key={product.id} className="">
-               <h1>{product.description}</h1>
-              </div>
+              <Product key={product.id} product={product}/>
             ))
           }
           <div>
