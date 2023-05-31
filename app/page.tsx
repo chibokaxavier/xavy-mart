@@ -1,32 +1,26 @@
- 
-
 import Product from "@/components/Product";
 import Head from "next/head";
 
 export default async function Home() {
-  const res = await fetch ("https://fakestoreapi.com/products")
-  const products: Product[]= await res.json() 
+  const res = await fetch("https://fakestoreapi.com/products");
+  const products: Product[] = await res.json();
   return (
     <>
-    <Head>
-      <title>
-        Xavy-Mart
-      </title>
-    </Head>
+      <Head>
+        <title>Xavy-Mart</title>
+      </Head>
       <main className=" min-h-screen px-8 max-w-7xl  mx-auto xl:px-0 mt-48">
         {" "}
         <section className="flex flex-col space-y-12 pb-44 ">
           <h1 className="text-5xl font-bold text-center">DEALS OF THE DAY</h1>
           <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  xl:gap-x-8">
-          {
-            products.map((product)=>(
-              <Product key={product.id} product={product}/>
-            ))
-          }
+            {products.map((product) => (
+              <Product key={product.id} product={product} />
+            ))}
           </div>
-         
+
           <div>
-            {/* products */} 
+            {/* products */}
             {/* products */}
             {/* products */}
             {/* products */}
