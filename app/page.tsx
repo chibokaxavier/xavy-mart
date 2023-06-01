@@ -9,7 +9,7 @@ export default async function Home() {
       <Head>
         <title>Xavy-Mart</title>
       </Head>
-      <main className=" min-h-screen px-8 max-w-7xl  mx-auto xl:px-0 mt-48">
+      <main className=" min-h-screen px-8 max-w-7xl  mx-auto xl:px-0 mt-48 ">
         {" "}
         <section className="flex flex-col space-y-12 pb-44 ">
           <h1 className="text-5xl font-bold text-center">DEALS OF THE DAY</h1>
